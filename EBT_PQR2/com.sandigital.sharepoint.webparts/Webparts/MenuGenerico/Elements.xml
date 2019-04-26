@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="MenuGenerico" List="113" Url="_catalogs/wp">
+    <File Path="MenuGenerico\MenuGenerico.webpart" Url="com.sandigital.sharepoint.webparts_MenuGenerico.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

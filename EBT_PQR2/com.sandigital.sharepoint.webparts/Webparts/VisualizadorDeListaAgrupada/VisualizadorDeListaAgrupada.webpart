@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="com.sandigital.sharepoint.webparts.VisualizadorDeListaAgrupada.VisualizadorDeListaAgrupada, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Visualizador de Lista Agrupada</property>
+        <property name="Description" type="string">Utilizze esta lista para exibir até 5 níveis de agrupamento em lista</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

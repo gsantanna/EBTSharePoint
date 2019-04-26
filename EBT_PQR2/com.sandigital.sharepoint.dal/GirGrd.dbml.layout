@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GirGrd">
+  <DataContextMoniker Name="/_GirGrdDataContext" />
+  <nestedChildShapes>
+    <classShape Id="db6b1f4f-20f7-4c6e-952c-0b49aeb49835" absoluteBounds="0.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/_GirGrdDataContext/NS_vwPortal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f22462df-47d2-4a04-9891-9c70177ff736" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

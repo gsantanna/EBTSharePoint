@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAta" targetNamespace="http://tempuri.org/dsAta.xsd" xmlns:mstns="http://tempuri.org/dsAta.xsd" xmlns="http://tempuri.org/dsAta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsAta" msprop:Generator_UserDSName="dsAta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Participantes" msprop:Generator_TableClassName="ParticipantesDataTable" msprop:Generator_TableVarName="tableParticipantes" msprop:Generator_RowChangedName="ParticipantesRowChanged" msprop:Generator_TablePropName="Participantes" msprop:Generator_RowDeletingName="ParticipantesRowDeleting" msprop:Generator_RowChangingName="ParticipantesRowChanging" msprop:Generator_RowEvHandlerName="ParticipantesRowChangeEventHandler" msprop:Generator_RowDeletedName="ParticipantesRowDeleted" msprop:Generator_RowClassName="ParticipantesRow" msprop:Generator_UserTableName="Participantes" msprop:Generator_RowEvArgName="ParticipantesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Reuniao" msprop:Generator_ColumnVarNameInTable="columnID_Reuniao" msprop:Generator_ColumnPropNameInRow="ID_Reuniao" msprop:Generator_ColumnPropNameInTable="ID_ReuniaoColumn" msprop:Generator_UserColumnName="ID_Reuniao" type="xs:int" />
+              <xs:element name="Participante" msprop:Generator_ColumnVarNameInTable="columnParticipante" msprop:Generator_ColumnPropNameInRow="Participante" msprop:Generator_ColumnPropNameInTable="ParticipanteColumn" msprop:Generator_UserColumnName="Participante" type="xs:string" />
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Reuniao" msprop:Generator_TableClassName="ReuniaoDataTable" msprop:Generator_TableVarName="tableReuniao" msprop:Generator_RowChangedName="ReuniaoRowChanged" msprop:Generator_TablePropName="Reuniao" msprop:Generator_RowDeletingName="ReuniaoRowDeleting" msprop:Generator_RowChangingName="ReuniaoRowChanging" msprop:Generator_RowEvHandlerName="ReuniaoRowChangeEventHandler" msprop:Generator_RowDeletedName="ReuniaoRowDeleted" msprop:Generator_RowClassName="ReuniaoRow" msprop:Generator_UserTableName="Reuniao" msprop:Generator_RowEvArgName="ReuniaoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Reuniao" msprop:Generator_ColumnVarNameInTable="columnID_Reuniao" msprop:Generator_ColumnPropNameInRow="ID_Reuniao" msprop:Generator_ColumnPropNameInTable="ID_ReuniaoColumn" msprop:Generator_UserColumnName="ID_Reuniao" type="xs:int" />
+              <xs:element name="dt_reuniao" msprop:Generator_ColumnVarNameInTable="columndt_reuniao" msprop:Generator_ColumnPropNameInRow="dt_reuniao" msprop:Generator_ColumnPropNameInTable="dt_reuniaoColumn" msprop:Generator_UserColumnName="dt_reuniao" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pauta" msprop:Generator_TableClassName="PautaDataTable" msprop:Generator_TableVarName="tablePauta" msprop:Generator_TablePropName="Pauta" msprop:Generator_RowDeletingName="PautaRowDeleting" msprop:Generator_RowChangingName="PautaRowChanging" msprop:Generator_RowEvHandlerName="PautaRowChangeEventHandler" msprop:Generator_RowDeletedName="PautaRowDeleted" msprop:Generator_UserTableName="Pauta" msprop:Generator_RowChangedName="PautaRowChanged" msprop:Generator_RowEvArgName="PautaRowChangeEvent" msprop:Generator_RowClassName="PautaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Reuniao" msprop:Generator_ColumnVarNameInTable="columnID_Reuniao" msprop:Generator_ColumnPropNameInRow="ID_Reuniao" msprop:Generator_ColumnPropNameInTable="ID_ReuniaoColumn" msprop:Generator_UserColumnName="ID_Reuniao" type="xs:int" minOccurs="0" />
+              <xs:element name="ID_Pauta" msprop:Generator_ColumnVarNameInTable="columnID_Pauta" msprop:Generator_ColumnPropNameInRow="ID_Pauta" msprop:Generator_ColumnPropNameInTable="ID_PautaColumn" msprop:Generator_UserColumnName="ID_Pauta" type="xs:int" />
+              <xs:element name="Pauta" msprop:Generator_ColumnVarNameInTable="columnPauta" msprop:Generator_ColumnPropNameInRow="Pauta" msprop:Generator_ColumnPropNameInTable="PautaColumn" msprop:Generator_UserColumnName="Pauta" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tarefa" msprop:Generator_TableClassName="TarefaDataTable" msprop:Generator_TableVarName="tableTarefa" msprop:Generator_TablePropName="Tarefa" msprop:Generator_RowDeletingName="TarefaRowDeleting" msprop:Generator_RowChangingName="TarefaRowChanging" msprop:Generator_RowEvHandlerName="TarefaRowChangeEventHandler" msprop:Generator_RowDeletedName="TarefaRowDeleted" msprop:Generator_UserTableName="Tarefa" msprop:Generator_RowChangedName="TarefaRowChanged" msprop:Generator_RowEvArgName="TarefaRowChangeEvent" msprop:Generator_RowClassName="TarefaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Tarefa" msprop:Generator_ColumnVarNameInTable="columnID_Tarefa" msprop:Generator_ColumnPropNameInRow="ID_Tarefa" msprop:Generator_ColumnPropNameInTable="ID_TarefaColumn" msprop:Generator_UserColumnName="ID_Tarefa" type="xs:int" />
+              <xs:element name="ID_Pauta" msprop:Generator_ColumnVarNameInTable="columnID_Pauta" msprop:Generator_ColumnPropNameInRow="ID_Pauta" msprop:Generator_ColumnPropNameInTable="ID_PautaColumn" msprop:Generator_UserColumnName="ID_Pauta" type="xs:int" minOccurs="0" />
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Atribuidoa" msprop:Generator_ColumnVarNameInTable="columnAtribuidoa" msprop:Generator_ColumnPropNameInRow="Atribuidoa" msprop:Generator_ColumnPropNameInTable="AtribuidoaColumn" msprop:Generator_UserColumnName="Atribuidoa" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="DataPrevista" msprop:Generator_ColumnVarNameInTable="columnDataPrevista" msprop:Generator_ColumnPropNameInRow="DataPrevista" msprop:Generator_ColumnPropNameInTable="DataPrevistaColumn" msprop:Generator_UserColumnName="DataPrevista" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Descricao" msprop:Generator_ColumnVarNameInTable="columnDescricao" msprop:Generator_ColumnPropNameInRow="Descricao" msprop:Generator_ColumnPropNameInTable="DescricaoColumn" msprop:Generator_UserColumnName="Descricao" type="xs:string" minOccurs="0" />
+              <xs:element name="DataConclusao" msprop:Generator_ColumnVarNameInTable="columnDataConclusao" msprop:Generator_ColumnPropNameInRow="DataConclusao" msprop:Generator_ColumnPropNameInTable="DataConclusaoColumn" msprop:Generator_UserColumnName="DataConclusao" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ItemTarefa" msprop:Generator_TableClassName="ItemTarefaDataTable" msprop:Generator_TableVarName="tableItemTarefa" msprop:Generator_TablePropName="ItemTarefa" msprop:Generator_RowDeletingName="ItemTarefaRowDeleting" msprop:Generator_RowChangingName="ItemTarefaRowChanging" msprop:Generator_RowEvHandlerName="ItemTarefaRowChangeEventHandler" msprop:Generator_RowDeletedName="ItemTarefaRowDeleted" msprop:Generator_UserTableName="ItemTarefa" msprop:Generator_RowChangedName="ItemTarefaRowChanged" msprop:Generator_RowEvArgName="ItemTarefaRowChangeEvent" msprop:Generator_RowClassName="ItemTarefaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_ItemTarefa" msprop:Generator_ColumnVarNameInTable="columnID_ItemTarefa" msprop:Generator_ColumnPropNameInRow="ID_ItemTarefa" msprop:Generator_ColumnPropNameInTable="ID_ItemTarefaColumn" msprop:Generator_UserColumnName="ID_ItemTarefa" type="xs:int" />
+              <xs:element name="ID_Tarefa" msprop:Generator_ColumnVarNameInTable="columnID_Tarefa" msprop:Generator_ColumnPropNameInRow="ID_Tarefa" msprop:Generator_ColumnPropNameInTable="ID_TarefaColumn" msprop:Generator_UserColumnName="ID_Tarefa" type="xs:int" minOccurs="0" />
+              <xs:element name="Reuniao" msprop:Generator_ColumnVarNameInTable="columnReuniao" msprop:Generator_ColumnPropNameInRow="Reuniao" msprop:Generator_ColumnPropNameInTable="ReuniaoColumn" msprop:Generator_UserColumnName="Reuniao" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="Responsavel" msprop:Generator_ColumnVarNameInTable="columnResponsavel" msprop:Generator_ColumnPropNameInRow="Responsavel" msprop:Generator_ColumnPropNameInTable="ResponsavelColumn" msprop:Generator_UserColumnName="Responsavel" type="xs:string" minOccurs="0" />
+              <xs:element name="Detalhes" msprop:Generator_ColumnVarNameInTable="columnDetalhes" msprop:Generator_ColumnPropNameInRow="Detalhes" msprop:Generator_ColumnPropNameInTable="DetalhesColumn" msprop:Generator_UserColumnName="Detalhes" type="xs:string" minOccurs="0" />
+              <xs:element name="Titulo" msprop:Generator_ColumnVarNameInTable="columnTitulo" msprop:Generator_ColumnPropNameInRow="Titulo" msprop:Generator_ColumnPropNameInTable="TituloColumn" msprop:Generator_UserColumnName="Titulo" type="xs:string" minOccurs="0" />
+              <xs:element name="Prazo" msprop:Generator_ColumnVarNameInTable="columnPrazo" msprop:Generator_ColumnPropNameInRow="Prazo" msprop:Generator_ColumnPropNameInTable="PrazoColumn" msprop:Generator_UserColumnName="Prazo" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Participantes" />
+      <xs:field xpath="mstns:ID_Reuniao" />
+      <xs:field xpath="mstns:Participante" />
+    </xs:unique>
+    <xs:unique name="Reuniao_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Reuniao" />
+      <xs:field xpath="mstns:ID_Reuniao" />
+    </xs:unique>
+    <xs:unique name="Pauta_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Pauta" />
+      <xs:field xpath="mstns:ID_Pauta" />
+    </xs:unique>
+    <xs:unique name="Tarefa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Tarefa" />
+      <xs:field xpath="mstns:ID_Tarefa" />
+    </xs:unique>
+    <xs:unique name="ItemTarefa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ItemTarefa" />
+      <xs:field xpath="mstns:ID_ItemTarefa" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Reuniao_Participantes" msdata:parent="Reuniao" msdata:child="Participantes" msdata:parentkey="ID_Reuniao" msdata:childkey="ID_Reuniao" msprop:Generator_UserChildTable="Participantes" msprop:Generator_ChildPropName="GetParticipantesRows" msprop:Generator_UserRelationName="Reuniao_Participantes" msprop:Generator_ParentPropName="ReuniaoRow" msprop:Generator_RelationVarName="relationReuniao_Participantes" msprop:Generator_UserParentTable="Reuniao" />
+      <msdata:Relationship name="Pauta_Tarefa" msdata:parent="Pauta" msdata:child="Tarefa" msdata:parentkey="ID_Pauta" msdata:childkey="ID_Pauta" msprop:Generator_UserChildTable="Tarefa" msprop:Generator_ChildPropName="GetTarefaRows" msprop:Generator_UserRelationName="Pauta_Tarefa" msprop:Generator_ParentPropName="PautaRow" msprop:Generator_RelationVarName="relationPauta_Tarefa" msprop:Generator_UserParentTable="Pauta" />
+      <msdata:Relationship name="Reuniao_Pauta" msdata:parent="Reuniao" msdata:child="Pauta" msdata:parentkey="ID_Reuniao" msdata:childkey="ID_Reuniao" msprop:Generator_UserChildTable="Pauta" msprop:Generator_ChildPropName="GetPautaRows" msprop:Generator_UserRelationName="Reuniao_Pauta" msprop:Generator_ParentPropName="ReuniaoRow" msprop:Generator_RelationVarName="relationReuniao_Pauta" msprop:Generator_UserParentTable="Reuniao" />
+      <msdata:Relationship name="Tarefa_ItemTarefa" msdata:parent="Tarefa" msdata:child="ItemTarefa" msdata:parentkey="ID_Tarefa" msdata:childkey="ID_Tarefa" msprop:Generator_UserChildTable="ItemTarefa" msprop:Generator_ChildPropName="GetItemTarefaRows" msprop:Generator_UserRelationName="Tarefa_ItemTarefa" msprop:Generator_ParentPropName="TarefaRow" msprop:Generator_RelationVarName="relationTarefa_ItemTarefa" msprop:Generator_UserParentTable="Tarefa" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

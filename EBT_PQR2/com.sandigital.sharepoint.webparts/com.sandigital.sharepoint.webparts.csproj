@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.sandigital.sharepoint.webparts</RootNamespace>
+    <AssemblyName>com.sandigital.sharepoint.webparts</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\inetpub\wwwroot\wss\VirtualDirectories\80\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Design.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGauges.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGridView.v12.1.Export, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v12.1.Export, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v12.1.Export, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.1.Web, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.1.Web, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlMenuSuperiorV5.ascx.cs">
+      <DependentUpon>ctlMenuSuperiorV5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlMenuSuperiorV5.ascx.designer.cs">
+      <DependentUpon>ctlMenuSuperiorV5.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPainelProdutividade_Causa.ascx.cs">
+      <DependentUpon>ctlPainelProdutividade_Causa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPainelProdutividade_Causa.ascx.designer.cs">
+      <DependentUpon>ctlPainelProdutividade_Causa.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlGridProdutividade.ascx.cs">
+      <DependentUpon>ctlGridProdutividade.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlGridProdutividade.ascx.designer.cs">
+      <DependentUpon>ctlGridProdutividade.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlMenuSuperiorV4.ascx.cs">
+      <DependentUpon>ctlMenuSuperiorV4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlMenuSuperiorV4.ascx.designer.cs">
+      <DependentUpon>ctlMenuSuperiorV4.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPainelProdutividade.ascx.cs">
+      <DependentUpon>ctlPainelProdutividade.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPainelProdutividade.ascx.designer.cs">
+      <DependentUpon>ctlPainelProdutividade.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPautas.ascx.cs">
+      <DependentUpon>ctlPautas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPautas.ascx.designer.cs">
+      <DependentUpon>ctlPautas.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlTestes.ascx.cs">
+      <DependentUpon>ctlTestes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlTestes.ascx.designer.cs">
+      <DependentUpon>ctlTestes.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_alertas.ascx.cs">
+      <DependentUpon>ctl_alertas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_alertas.ascx.designer.cs">
+      <DependentUpon>ctl_alertas.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_ChatOperador.ascx.cs">
+      <DependentUpon>ctl_ChatOperador.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_ChatOperador.ascx.designer.cs">
+      <DependentUpon>ctl_ChatOperador.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_ChatUsuario.ascx.cs">
+      <DependentUpon>ctl_ChatUsuario.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_ChatUsuario.ascx.designer.cs">
+      <DependentUpon>ctl_ChatUsuario.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\NavegacaoRapidaInferior.ascx.cs">
+      <DependentUpon>NavegacaoRapidaInferior.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\NavegacaoRapidaInferior.ascx.designer.cs">
+      <DependentUpon>NavegacaoRapidaInferior.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\VisualizadorDeListaAgrupadaEditor.ascx.cs">
+      <DependentUpon>VisualizadorDeListaAgrupadaEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\VisualizadorDeListaAgrupadaEditor.ascx.designer.cs">
+      <DependentUpon>VisualizadorDeListaAgrupadaEditor.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_AcessoRapido.ascx.cs">
+      <DependentUpon>ctl_AcessoRapido.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_AcessoRapido.ascx.designer.cs">
+      <DependentUpon>ctl_AcessoRapido.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ER_AtualizaCachePautas\ER_AtualizaCachePautas.cs" />
+    <Compile Include="Modelos\CampoLista.cs" />
+    <Compile Include="Webparts\AcessoRapido\AcessoRapido.ascx.cs">
+      <DependentUpon>AcessoRapido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\AcessoRapido\AcessoRapido.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcessoRapido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FormularioProdutividade\FormularioProdutividade.ascx.cs">
+      <DependentUpon>FormularioProdutividade.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FormularioProdutividade\FormularioProdutividade.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormularioProdutividade.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\ItemRanking.cs" />
+    <Compile Include="Modelos\Produtividade.cs" />
+    <Compile Include="Webparts\PlacarQualidade\PlacarQualidade.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlacarQualidade.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\VisualizadorDeListaAgrupada\ConfigurationItem.cs" />
+    <Compile Include="Webparts\VisualizadorDeListaAgrupada\VisualizadorDeListaAgrupada.ascx.cs">
+      <DependentUpon>VisualizadorDeListaAgrupada.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\VisualizadorDeListaAgrupada\VisualizadorDeListaAgrupada.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisualizadorDeListaAgrupada.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\VisualizadorDeListaAgrupada\VisualizadorDeListaAgrupadaConfiguration.cs" />
+    <Compile Include="Webparts\ExportadorPautas\ExportadorPautas.ascx.cs">
+      <DependentUpon>ExportadorPautas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ExportadorPautas\ExportadorPautas.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExportadorPautas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\sdHandler.cs" />
+    <Compile Include="Modelos\Slide.cs" />
+    <Compile Include="Webparts\ParticipantesReuniaoLista\ParticipantesReuniaoLista.ascx.cs">
+      <DependentUpon>ParticipantesReuniaoLista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ParticipantesReuniaoLista\ParticipantesReuniaoLista.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParticipantesReuniaoLista.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="spsWrapper\spsWrapper2.cs" />
+    <Compile Include="Webparts\PainelOperador\PainelOperador.ascx.cs">
+      <DependentUpon>PainelOperador.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\PainelOperador\PainelOperador.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PainelOperador.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\PainelUsuario\PainelUsuario.ascx.cs">
+      <DependentUpon>PainelUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\PainelUsuario\PainelUsuario.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PainelUsuario.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\GeradorDeAtas\GeradorDeAtas.ascx.cs">
+      <DependentUpon>GeradorDeAtas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\GeradorDeAtas\GeradorDeAtas.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeradorDeAtas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Participante.cs" />
+    <Compile Include="Modelos\Reuniao.cs" />
+    <Compile Include="spsWrapper\spsWrapper.cs" />
+    <Compile Include="Webparts\EventosDeRedeListagem\EventosDeRedeListagem.ascx.cs">
+      <DependentUpon>EventosDeRedeListagem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\EventosDeRedeListagem\EventosDeRedeListagem.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventosDeRedeListagem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Pauta.cs" />
+    <Compile Include="Modelos\Tarefa.cs" />
+    <Compile Include="Modelos\ItemTarefa.cs" />
+    <Compile Include="Webparts\ParticipantesReuniao\ParticipantesReuniao.ascx.cs">
+      <DependentUpon>ParticipantesReuniao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ParticipantesReuniao\ParticipantesReuniao.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParticipantesReuniao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MenuGenerico\MenuGenerico.ascx.cs">
+      <DependentUpon>MenuGenerico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MenuGenerico\MenuGenerico.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuGenerico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\GirGrd\GirGrd.ascx.cs">
+      <DependentUpon>GirGrd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\GirGrd\GirGrd.ascx.g.cs" />
+    <Compile Include="Webparts\PlacarQualidade\PlacarQualidade.ascx.cs">
+      <DependentUpon>PlacarQualidade.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ChatNoc\ChatNoc.ascx.cs">
+      <DependentUpon>ChatNoc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ChatNoc\ChatNoc.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChatNoc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeusSistemas\MeusSistemas.ascx.cs">
+      <DependentUpon>MeusSistemas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeusSistemas\MeusSistemas.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeusSistemas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Blig\Blig.ascx.cs">
+      <DependentUpon>Blig.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Blig\Blig.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Blig.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Comunidades\Comunidades.ascx.cs">
+      <DependentUpon>Comunidades.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Comunidades\Comunidades.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Comunidades.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\EventosDeRede\EventosDeRede.ascx.cs">
+      <DependentUpon>EventosDeRede.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\EventosDeRede\EventosDeRede.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventosDeRede.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7c3438a7-e498-41c5-8516-e830a994e39c}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_AtualizaCachePautas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{78a67d03-7d77-411a-8ec9-9fd610a911c4}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\AcessoRapido\AcessoRapido.webpart" />
+    <None Include="Webparts\AcessoRapido\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a07c87b2-a433-4291-83c2-ee2a8716eac7}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\FormularioProdutividade\FormularioProdutividade.webpart" />
+    <None Include="Webparts\FormularioProdutividade\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35985f78-aded-415f-ad5f-02e50de976ae}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\VisualizadorDeListaAgrupada\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d4fa0363-1625-4268-967c-5acd3be2e72e}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\VisualizadorDeListaAgrupada\VisualizadorDeListaAgrupada.webpart" />
+    <None Include="Webparts\ExportadorPautas\ExportadorPautas.webpart" />
+    <None Include="Webparts\ExportadorPautas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{654b1da6-14b5-41e1-945d-49419aca27de}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2bf04d68-faa8-498b-a7b9-5b195b3f0bc3}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\ParticipantesReuniaoLista\ParticipantesReuniaoLista.webpart" />
+    <None Include="Webparts\ParticipantesReuniaoLista\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{20932568-c73c-43c5-ba47-c928e8a97b80}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\PainelOperador\PainelOperador.webpart" />
+    <None Include="Webparts\PainelOperador\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77a4ca55-c04e-465c-a00d-89211214ac1c}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\PainelUsuario\PainelUsuario.webpart" />
+    <None Include="Webparts\PainelUsuario\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{173298fc-dde4-4ab4-97a4-3784886b5a42}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\GeradorDeAtas\GeradorDeAtas.webpart" />
+    <None Include="Webparts\GeradorDeAtas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e2d17ed2-4624-43ec-834e-5cfee0d5ddbb}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\EventosDeRedeListagem\EventosDeRedeListagem.webpart" />
+    <None Include="Webparts\EventosDeRedeListagem\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9df3d6d3-f110-4b77-aa84-dd8b973d13de}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\ParticipantesReuniao\ParticipantesReuniao.webpart" />
+    <None Include="Webparts\ParticipantesReuniao\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ad32230-f629-4fe5-8f13-c4415e85d339}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\MenuGenerico\MenuGenerico.webpart" />
+    <None Include="Webparts\MenuGenerico\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77eadeff-2896-4b62-9895-a06d95dd204e}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\GirGrd\GirGrd.webpart" />
+    <None Include="Webparts\GirGrd\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8bfef3a-5ab5-41c6-b9e3-3b255652ae22}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\PlacarQualidade\PlacarQualidade.webpart" />
+    <None Include="Webparts\PlacarQualidade\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2925ad8a-04ee-449b-b426-798482baef9b}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\ChatNoc\ChatNoc.webpart" />
+    <None Include="Webparts\ChatNoc\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a827ad67-66d1-4dac-b94f-53786cd66cde}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\MeusSistemas\MeusSistemas.webpart" />
+    <None Include="Webparts\MeusSistemas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{994989ea-3876-4917-b6c2-c09a1ac6dab1}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Blig\Blig.webpart" />
+    <None Include="Webparts\Blig\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63dc47fb-c718-4f94-b1f6-f365ef59e937}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Comunidades\Comunidades.webpart" />
+    <None Include="Webparts\Comunidades\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{07a4be11-ffa6-4c30-958f-a01b6cbf3a56}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\EventosDeRede\EventosDeRede.webpart" />
+    <None Include="Webparts\EventosDeRede\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b3950a74-3403-45b9-9dc5-7ee329ef6a82}</SharePointProjectItemId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dd457f80-6c0b-4ca6-8cee-fa77eaf84a4e}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{4f66373b-f15a-4128-9037-3b15f70205e5}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{f77d2a82-6bb9-4bec-8fcd-7398c5bf3ad6}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Comunidades\" />
+    <Folder Include="Images\com.sandigital.sharepoint.webparts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlMenuSuperiorV5.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPainelProdutividade_Causa.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlGridProdutividade.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlMenuSuperiorV4.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPainelProdutividade.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlPautas.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctlTestes.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_alertas.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_ChatOperador.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_ChatUsuario.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\NavegacaoRapidaInferior.ascx" />
+    <None Include="Layouts\com.sandigital.sharepoint.webparts\sdHandler.ashx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\VisualizadorDeListaAgrupadaEditor.ascx" />
+    <Content Include="ControlTemplates\com.sandigital.sharepoint.webparts\ctl_AcessoRapido.ascx" />
+    <Content Include="ER_AtualizaCachePautas\Elements.xml" />
+    <Content Include="Webparts\AcessoRapido\AcessoRapido.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AcessoRapido.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\AcessoRapido\Elements.xml" />
+    <Content Include="Webparts\FormularioProdutividade\Elements.xml" />
+    <Content Include="Webparts\FormularioProdutividade\FormularioProdutividade.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>FormularioProdutividade.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\VisualizadorDeListaAgrupada\Elements.xml" />
+    <Content Include="Webparts\VisualizadorDeListaAgrupada\VisualizadorDeListaAgrupada.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>VisualizadorDeListaAgrupada.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\ExportadorPautas\Elements.xml" />
+    <Content Include="Webparts\ExportadorPautas\ExportadorPautas.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ExportadorPautas.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\ParticipantesReuniaoLista\Elements.xml" />
+    <Content Include="Webparts\ParticipantesReuniaoLista\ParticipantesReuniaoLista.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ParticipantesReuniaoLista.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\PainelOperador\Elements.xml" />
+    <Content Include="Webparts\PainelOperador\PainelOperador.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>PainelOperador.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\PainelUsuario\Elements.xml" />
+    <Content Include="Webparts\PainelUsuario\PainelUsuario.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>PainelUsuario.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\GeradorDeAtas\Elements.xml" />
+    <Content Include="Webparts\GeradorDeAtas\GeradorDeAtas.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>GeradorDeAtas.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\EventosDeRedeListagem\Elements.xml" />
+    <Content Include="Webparts\EventosDeRedeListagem\EventosDeRedeListagem.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>EventosDeRedeListagem.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\ParticipantesReuniao\Elements.xml" />
+    <Content Include="Webparts\ParticipantesReuniao\ParticipantesReuniao.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ParticipantesReuniao.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\MenuGenerico\Elements.xml" />
+    <Content Include="Webparts\MenuGenerico\MenuGenerico.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MenuGenerico.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\GirGrd\Elements.xml" />
+    <Content Include="Webparts\GirGrd\GirGrd.ascx" />
+    <Content Include="Webparts\PlacarQualidade\Elements.xml" />
+    <Content Include="Webparts\PlacarQualidade\PlacarQualidade.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>PlacarQualidade.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\ChatNoc\ChatNoc.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ChatNoc.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\ChatNoc\Elements.xml" />
+    <Content Include="Webparts\MeusSistemas\Elements.xml" />
+    <Content Include="Webparts\MeusSistemas\MeusSistemas.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MeusSistemas.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Blig\Blig.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Blig.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Blig\Elements.xml" />
+    <Content Include="Webparts\Comunidades\Comunidades.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Comunidades.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Comunidades\Elements.xml" />
+    <Content Include="Webparts\EventosDeRede\Elements.xml" />
+    <Content Include="Webparts\EventosDeRede\EventosDeRede.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>EventosDeRede.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.sandigital.reports\com.sandigital.sharepoint.reports.csproj">
+      <Project>{fa041a65-3bd2-4815-a285-8facea43b35f}</Project>
+      <Name>com.sandigital.sharepoint.reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.sandigital.sharepoint.dal\com.sandigital.sharepoint.dal.csproj">
+      <Project>{80618f89-936b-41cb-9816-38cd17f5ed6d}</Project>
+      <Name>com.sandigital.sharepoint.dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

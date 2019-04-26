@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Embratel" Class="_EmbratelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=Localhost;Initial Catalog=Embratel;Integrated Security=True" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Funcionario" Member="Funcionario">
+    <Type Name="Funcionario">
+      <Column Name="Empresa" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="MATRICULA" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="NomeLogin" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="Nascimento" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Departamento" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NomeDiretoria" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NomeGerencia" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="LogradouroComercial" Type="System.String" DbType="VarChar(61)" CanBeNull="true" />
+      <Column Name="CidadeComercial" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="UFComercial" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="CEPComercial" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="TelefoneCelular" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TelefoneComercial" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Unidade" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NivelHierarquico" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="Predio" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="CategoriaFuncionario" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="Cidade" Type="System.String" DbType="VarChar(34)" CanBeNull="true" />
+      <Column Name="Banco" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="NomeBanco" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Cargo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnderecoComercial" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DescricaoCargo" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="NOME_FONETICO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="WSS_ID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="WSS_APELIDO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="WSS_URL_FOTO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

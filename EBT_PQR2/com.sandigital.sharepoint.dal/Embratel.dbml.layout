@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Embratel">
+  <DataContextMoniker Name="/_EmbratelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cf51ea7f-caf2-44ed-8e35-0d18a1de8ff7" absoluteBounds="0.75, 0.75, 2, 6.5784326171874987">
+      <DataClassMoniker Name="/_EmbratelDataContext/Funcionario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9abc4772-bcf1-44b9-9292-b860696bceed" absoluteBounds="0.765, 1.21, 1.9700000000000002, 6.0184326171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

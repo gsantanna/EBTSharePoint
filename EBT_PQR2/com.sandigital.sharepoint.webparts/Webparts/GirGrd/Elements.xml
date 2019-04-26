@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="GirGrd" List="113" Url="_catalogs/wp">
+    <File Path="GirGrd\GirGrd.webpart" Url="com.sandigital.sharepoint.webparts_GirGrd.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

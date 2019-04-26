@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="com.sandigital.sharepoint.webparts.FormularioProdutividade.FormularioProdutividade, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Formulário de Produtividade</property>
+        <property name="Description" type="string">Utilize este formulário para cadastrar a quantidade de Recs</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

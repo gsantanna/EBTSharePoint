@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Embratel" Class="_EventoRedeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=Localhost;Initial Catalog=EVENTOS;Persist Security Info=True;User ID=wss;Password=wss" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EventoComunidade" Member="EventoComunidade">
+    <Type Name="EventoComunidade">
+      <Column Name="id_evento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_comunidade" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Comunidade_EventoComunidade" Member="Comunidade" ThisKey="id_comunidade" OtherKey="id_comunidade" Type="Comunidade" IsForeignKey="true" />
+      <Association Name="Evento_EventoComunidade" Member="Evento" ThisKey="id_evento" OtherKey="id_evento" Type="Evento" IsForeignKey="true" />
+    </Type>
+    <DeleteFunction FunctionId="FunctionId1">
+      <Argument Parameter="id_evento" Member="id_evento" />
+    </DeleteFunction>
+  </Table>
+  <Table Name="dbo.Comunidade" Member="Comunidade">
+    <Type Name="Comunidade">
+      <Column Name="id_comunidade" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Comunidade_EventoComunidade" Member="EventoComunidade" ThisKey="id_comunidade" OtherKey="id_comunidade" Type="EventoComunidade" />
+      <Association Name="Comunidade_FuncionarioComunidade" Member="FuncionarioComunidade" ThisKey="id_comunidade" OtherKey="id_comunidade" Type="FuncionarioComunidade" />
+    </Type>
+  </Table>
+  <Table Name="" Member="RelatorioEvento">
+    <Type Name="RelatorioEvento" Id="ID1">
+      <Column Name="usuario" Member="Usuario" Type="System.String" DbType="varchar(100)" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="comunidade" Member="Comunidade" Type="System.String" DbType="varchar(100)" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="qtd" Member="Qtd" Type="System.Int32" DbType="int" CanBeNull="false" />
+      <Column Name="id_comunidade" Type="System.Int32" DbType="int" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="RelatorioEventoDetalhe">
+    <Type Name="RelatorioEventoDetalhe">
+      <Column Name="id_evento" Type="System.Int32" DbType="int" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Titulo" Type="System.String" DbType="varchar(100)" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="smalldatetime" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.evt_chat_msg" Member="evt_chat_msg">
+    <Type Name="evt_chat_msg">
+      <Column Name="id_msg" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_atendimento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="data" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="de" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="para" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="msg" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="lido" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="evt_chat_atendimento_evt_chat_msg" Member="evt_chat_atendimento" ThisKey="id_atendimento" OtherKey="id_atendimento" Type="evt_chat_atendimento" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.evt_chat_noc" Member="evt_chat_noc">
+    <Type Name="evt_chat_noc">
+      <Column Name="id_noc" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ativo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="evt_chat_noc_evt_chat_atendimento" Member="evt_chat_atendimento" ThisKey="id_noc" OtherKey="id_noc" Type="evt_chat_atendimento" />
+      <Association Name="evt_chat_noc_evt_chat_operador" Member="evt_chat_operador" ThisKey="id_noc" OtherKey="id_noc" Type="evt_chat_operador" />
+    </Type>
+  </Table>
+  <Table Name="" Member="PainelUsuario">
+    <Type Name="PainelUsuario" Id="ID2">
+      <Column Name="id_atendimento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Operador" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Noc" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="dt_inicio" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Mensagens" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UltimaMsg" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Nome_Operador" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="dt_fim" Type="System.DateTime" DbType="smalldatetime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.evt_chat_atendimento" Member="evt_chat_atendimento">
+    <Type Name="evt_chat_atendimento">
+      <Column Name="id_atendimento" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dt_inicio" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="dt_fim" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Operador" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="id_noc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FinalizadoPor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="evt_chat_atendimento_evt_chat_msg" Member="evt_chat_msg" ThisKey="id_atendimento" OtherKey="id_atendimento" Type="evt_chat_msg" />
+      <Association Name="evt_chat_noc_evt_chat_atendimento" Member="evt_chat_noc" ThisKey="id_noc" OtherKey="id_noc" Type="evt_chat_noc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.evt_chat_operador" Member="evt_chat_operador">
+    <Type Name="evt_chat_operador">
+      <Column Name="operador" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_noc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="evt_chat_noc_evt_chat_operador" Member="evt_chat_noc" ThisKey="id_noc" OtherKey="id_noc" Type="evt_chat_noc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="PainelOperador">
+    <Type Name="PainelOperador" Id="ID3">
+      <Column Name="id_atendimento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Operador" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Noc" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="dt_inicio" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Mensagens" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UltimaMsg" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Nome_Operador" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="dt_fim" Type="System.DateTime" DbType="smalldatetime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.evt_chat_noc_status" Member="evt_chat_noc_status">
+    <Type Name="evt_chat_noc_status">
+      <Column Name="id_noc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="noc" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Online" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Offline" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.evt_chat_noc_status_detalhe" Member="evt_chat_noc_status_detalhe">
+    <Type Name="evt_chat_noc_status_detalhe">
+      <Column Name="id_noc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="noc" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="operador" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status_desc" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FuncionarioComunidade" Member="FuncionarioComunidade">
+    <Type Name="FuncionarioComunidade">
+      <Column Name="id_FuncionarioComunidade" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_comunidade" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Association Name="Comunidade_FuncionarioComunidade" Member="Comunidade" ThisKey="id_comunidade" OtherKey="id_comunidade" Type="Comunidade" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventoConfig" Member="EventoConfig">
+    <Type Name="EventoConfig">
+      <Column Name="Grupo" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Escrita" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Evento" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_TipoMsg" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Descricao" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Causa" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Inicio" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Fim" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Localidades" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_ImpactoLocal" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_ImpactoLDN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Contingencias" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Previsao" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_EnviadoPor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_EnviadoPor2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Responsavel" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Comunidades" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="pnl_Servico" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="EventoConfig_EventoTexto" Member="EventoTexto" ThisKey="Grupo" OtherKey="Grupo" Type="EventoTexto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Evento" Member="Evento">
+    <Type Name="Evento">
+      <Column Name="id_evento" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Evento" Member="Evento1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TipoEvento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Causa" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Inicio" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Fim" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Localidades" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ImpactoLocal" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImpactoLDN" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Contingencias" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Previsao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EnviadoPor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EnviadoPor2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Responsavel" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="id_pai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ral" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="servico" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Evento_EventoComunidade" Member="EventoComunidade" ThisKey="id_evento" OtherKey="id_evento" Type="EventoComunidade" />
+      <Association Name="Evento_Comentario" Member="Comentario" ThisKey="id_evento" OtherKey="id_evento" Type="Comentario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventoTexto" Member="EventoTexto">
+    <Type Name="EventoTexto">
+      <Column Name="Grupo" Type="System.String" DbType="VarChar(100)" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="Texto" Type="System.String" DbType="VarChar(500)" IsPrimaryKey="true" CanBeNull="true" />
+      <Association Name="EventoConfig_EventoTexto" Member="EventoConfig" ThisKey="Grupo" OtherKey="Grupo" Type="EventoConfig" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comentario" Member="Comentario">
+    <Type Name="Comentario">
+      <Column Name="id_comentario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_evento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="usuario" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="texto" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="foto" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="dt_comentario" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ip_comentario" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="aparelho" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="dt_exclusao" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Association Name="Evento_Comentario" Member="Evento" ThisKey="id_evento" OtherKey="id_evento" Type="Evento" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Function Name="dbo.EVT_AtualizarEvento" Method="EVT_AtualizarEvento">
+    <Parameter Name="id_evento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Evento" Parameter="evento" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="TipoEvento" Parameter="tipoEvento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Descricao" Parameter="descricao" Type="System.String" DbType="Text" />
+    <Parameter Name="Causa" Parameter="causa" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="Inicio" Parameter="inicio" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="Fim" Parameter="fim" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="Localidades" Parameter="localidades" Type="System.String" DbType="VarChar(300)" />
+    <Parameter Name="ImpactoLocal" Parameter="impactoLocal" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ImpactoLDN" Parameter="impactoLDN" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Contingencias" Parameter="contingencias" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="Text" />
+    <Parameter Name="Previsao" Parameter="previsao" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="EnviadoPor" Parameter="enviadoPor" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="EnviadoPor2" Parameter="enviadoPor2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Responsavel" Parameter="responsavel" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="id_pai" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EVT_ExcluirEvento" Method="EVT_ExcluirEvento">
+    <Parameter Name="id_evento" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Id="FunctionId1" Name="dbo.EVT_ExcluirEventoComunidade" Method="EVT_ExcluirEventoComunidade">
+    <Parameter Name="id_evento" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EVT_GetEvento" Method="EVT_GetEvento">
+    <ElementType Name="EVT_GetEventoResultado">
+      <Column Name="id_evento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Evento" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TipoEvento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Causa" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Inicio" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Fim" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Localidades" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="ImpactoLocal" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImpactoLDN" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Contingencias" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Previsao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EnviadoPor" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Responsavel" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.EVT_InserirEventoComunidade" Method="EVT_InserirEventoComunidade1">
+    <Parameter Name="id_evento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="id_comunidade" Type="System.Int32" DbType="Int" />
+    <ElementType Name="EVT_InserirEventoComunidadeResultado">
+      <Column Name="Column1" Type="System.Decimal" DbType="Decimal(0,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.EVT_ConsultaRelatorioEvento" Method="EVT_ConsultaRelatorioEvento">
+    <Parameter Name="Filtro" Parameter="filtro" Type="System.String" DbType="VarChar(300)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.EVT_ConsultaRelatorioEventoDetalhe" Method="EVT_ConsultaRelatorioEventoDetalhe">
+    <Parameter Name="usuario" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="id_comunidade" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Filtro" Parameter="filtro" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EVT_IniciaAtendimento" Method="EVT_IniciaAtendimento">
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="id_noc" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EVT_InserirMsg" Method="EVT_InserirMsg">
+    <Parameter Name="id_atendimento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="de" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="msg" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EVT_FinalizarAtendimento" Method="EVT_FinalizarAtendimento">
+    <Parameter Name="id_atendimento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Finalizador" Parameter="finalizador" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EVT_ReabrirAtendimento" Method="EVT_ReabrirAtendimento">
+    <Parameter Name="id_atendimento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Usuario" Parameter="usuario" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EVT_ConsultaPainelUsuario" Method="EVT_ConsultaPainelUsuario">
+    <Parameter Name="usuario" Type="System.String" DbType="VarChar(100)" />
+    <ElementType IdRef="ID2" />
+  </Function>
+  <Function Name="dbo.EVT_ConsultaPainelOperador" Method="EVT_ConsultaPainelOperador">
+    <Parameter Name="Operador" Parameter="operador" Type="System.String" DbType="VarChar(100)" />
+    <ElementType IdRef="ID3" />
+  </Function>
+  <Function Name="dbo.EVT_ConsultaPendenciaNocOperador" Method="EVT_ConsultaPendenciaNocOperador">
+    <Parameter Name="Operador" Parameter="operador" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="EVT_ConsultaPendenciaNocOperadorResultado">
+      <Column Name="id_noc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Noc" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="id_atendimento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="dt_inicio" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

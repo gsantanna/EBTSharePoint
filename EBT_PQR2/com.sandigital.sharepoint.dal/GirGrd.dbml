@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GIR" Class="_GirGrdDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=localhost;Initial Catalog=Eventos;Integrated Security=True" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NS_vwPortal" Member="NS_vwPortal">
+    <Type Name="NS_vwPortal">
+      <Column Name="SGIR" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Grd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Inicio" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="Rede" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Atividade" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Interrupcao" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Net" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Claro" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Gir" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Localidade" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

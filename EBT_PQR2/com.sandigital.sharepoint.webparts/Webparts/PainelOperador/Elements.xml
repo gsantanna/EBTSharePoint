@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="PainelOperador" List="113" Url="_catalogs/wp">
+    <File Path="PainelOperador\PainelOperador.webpart" Url="com.sandigital.sharepoint.webparts_PainelOperador.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Chat" />
+    </File>
+  </Module>
+</Elements>

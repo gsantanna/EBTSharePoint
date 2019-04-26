@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 15.75" name="EventoRede">
+  <DataContextMoniker Name="/_EventoRedeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b87274bf-42fb-4b75-939a-eeaa044888d6" absoluteBounds="3.5, 1.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/_EventoRedeDataContext/EventoComunidade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fc88082-5938-4137-9b6f-282ca43c6df9" absoluteBounds="3.515, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c9c6aa73-35f0-43ad-9d41-b6fe75f62eed" absoluteBounds="0.75, 6.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/_EventoRedeDataContext/Comunidade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eacf419e-4482-4a38-a30a-776570ac3fd4" absoluteBounds="0.765, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5afe345c-e092-4838-a5e7-11167b4bfb6b" absoluteBounds="0.75, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/RelatorioEvento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ccdb12e-341b-43d7-b60a-1af63c4c85e1" absoluteBounds="0.765, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46bcb7fb-4390-440f-85b7-ae8919b07658" absoluteBounds="9.75, 10.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/_EventoRedeDataContext/RelatorioEventoDetalhe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="44afd3ca-ac7b-4c72-a800-667cda40effd" absoluteBounds="9.765, 11.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46af5773-a852-49d9-9a3c-9661a990bc88" absoluteBounds="12.25, 3.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/evt_chat_msg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d442ee6-a774-4c49-9265-fc76a99cde26" absoluteBounds="12.265, 3.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15e8d8a6-4d82-4023-8b5b-41fe1eff8908" absoluteBounds="6.75, 2.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/_EventoRedeDataContext/evt_chat_noc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff9e9d47-2fd2-4a21-b37a-9ad2eb63a353" absoluteBounds="6.765, 3.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c89f47c6-94f0-4070-ac77-d509ce21c57d" absoluteBounds="3.75, 12.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/PainelUsuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b0211cf-80aa-47b7-95be-3e8400d6949b" absoluteBounds="3.765, 13.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36ed17bf-e43c-4255-88e7-7fd214844db5" absoluteBounds="9.5, 3.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/evt_chat_atendimento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c75074df-cdc3-4a6f-a790-22186435c3d2" absoluteBounds="9.515, 3.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0c4648f-1831-4954-9e31-89650e994aae" absoluteBounds="9.5, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/evt_chat_operador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81ae1bd3-ec7a-466a-ab44-016952503f78" absoluteBounds="9.515, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57e9d89c-2359-444b-9095-cf0f5faae7e8" absoluteBounds="12.75, 6.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/PainelOperador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3944750f-9570-4538-a800-50561c8b8142" absoluteBounds="12.765, 7.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1c8463c-8878-43b8-97fb-18e7c8426ba9" absoluteBounds="12.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/evt_chat_noc_status" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82f41d1e-e1fb-4daf-a8db-574bf4670fba" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec7076bd-f72f-454a-b8bd-be9a8120e5f7" absoluteBounds="12.75, 10.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/_EventoRedeDataContext/evt_chat_noc_status_detalhe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f089644a-b503-4be6-baf5-ce784f01a89f" absoluteBounds="12.765, 11.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="078d6729-f8b4-4f88-a670-8cb6f04198eb" absoluteBounds="3.5, 7.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/FuncionarioComunidade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22560a6e-bf35-489c-8bbf-8ec0009da63b" absoluteBounds="3.515, 7.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="383c5fb6-28a3-4344-a887-ead65389ba11" absoluteBounds="6.75, 7, 2, 4.6554182942708318">
+      <DataClassMoniker Name="/_EventoRedeDataContext/EventoConfig" />
+      <nestedChildShapes>
+        <elementListCompartment Id="242a8092-635d-421e-9794-58727935df94" absoluteBounds="6.765, 7.46, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7360ffa2-ab77-4ac2-9193-16742e464d64" absoluteBounds="0.75, 1, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/_EventoRedeDataContext/Evento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="838b558c-5d4d-4cc3-9f3e-4133c890a3ed" absoluteBounds="0.765, 1.46, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81c31b37-2335-4281-ae06-1c8fb7cd4603" absoluteBounds="9.5, 7.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/_EventoRedeDataContext/EventoTexto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0608a74a-e495-4510-8aac-f02751454c4e" absoluteBounds="9.515, 8.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af523096-8b53-4a10-9287-f33815c731e1" absoluteBounds="3.5, 4, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/_EventoRedeDataContext/Comentario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16961fa0-c9af-43af-8d11-2053c1dcd830" absoluteBounds="3.515, 4.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.625); (3.125 : 6.25); (3.125 : 2.34699625651042); (3.5 : 2.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/_EventoRedeDataContext/Comunidade/Comunidade_EventoComunidade" />
+      <nodes>
+        <classShapeMoniker Id="c9c6aa73-35f0-43ad-9d41-b6fe75f62eed" />
+        <classShapeMoniker Id="b87274bf-42fb-4b75-939a-eeaa044888d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.98599812825521); (3.5 : 1.98599812825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/_EventoRedeDataContext/Evento/Evento_EventoComunidade" />
+      <nodes>
+        <classShapeMoniker Id="7360ffa2-ab77-4ac2-9193-16742e464d64" />
+        <classShapeMoniker Id="b87274bf-42fb-4b75-939a-eeaa044888d6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 4.45274983723958); (12.25 : 4.45274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/_EventoRedeDataContext/evt_chat_atendimento/evt_chat_atendimento_evt_chat_msg" />
+      <nodes>
+        <classShapeMoniker Id="36ed17bf-e43c-4255-88e7-7fd214844db5" />
+        <classShapeMoniker Id="46af5773-a852-49d9-9a3c-9661a990bc88" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 3.69314697265625); (9.5 : 3.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/_EventoRedeDataContext/evt_chat_noc/evt_chat_noc_evt_chat_atendimento" />
+      <nodes>
+        <classShapeMoniker Id="15e8d8a6-4d82-4023-8b5b-41fe1eff8908" />
+        <classShapeMoniker Id="36ed17bf-e43c-4255-88e7-7fd214844db5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.75 : 2.625); (7.75 : 1.78929768880208); (9.5 : 1.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/_EventoRedeDataContext/evt_chat_noc/evt_chat_noc_evt_chat_operador" />
+      <nodes>
+        <classShapeMoniker Id="15e8d8a6-4d82-4023-8b5b-41fe1eff8908" />
+        <classShapeMoniker Id="f0c4648f-1831-4954-9e31-89650e994aae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.75564697265625); (3.5 : 7.75564697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/_EventoRedeDataContext/Comunidade/Comunidade_FuncionarioComunidade" />
+      <nodes>
+        <classShapeMoniker Id="c9c6aa73-35f0-43ad-9d41-b6fe75f62eed" />
+        <classShapeMoniker Id="078d6729-f8b4-4f88-a670-8cb6f04198eb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 8.22199625651042); (9.5 : 8.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/_EventoRedeDataContext/EventoConfig/EventoConfig_EventoTexto" />
+      <nodes>
+        <classShapeMoniker Id="383c5fb6-28a3-4344-a887-ead65389ba11" />
+        <classShapeMoniker Id="81c31b37-2335-4281-ae06-1c8fb7cd4603" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.73155843098958); (3.04166666666667 : 4.73155843098958 : JumpStart); (3.20833333333333 : 4.73155843098958 : JumpEnd); (3.5 : 4.73155843098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/_EventoRedeDataContext/Evento/Evento_Comentario" />
+      <nodes>
+        <classShapeMoniker Id="7360ffa2-ab77-4ac2-9193-16742e464d64" />
+        <classShapeMoniker Id="af523096-8b53-4a10-9287-f33815c731e1" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

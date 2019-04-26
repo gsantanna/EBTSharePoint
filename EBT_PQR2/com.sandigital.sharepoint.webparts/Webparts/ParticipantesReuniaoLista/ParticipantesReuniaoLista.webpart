@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="com.sandigital.sharepoint.webparts.ParticipantesReuniaoLista.ParticipantesReuniaoLista, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Lista_Participantes_Reunião</property>
+        <property name="Description" type="string">Lista de participantes das reuniões preventivas Voc</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="600">
+      <Receiver>
+        <Name>ER_AtualizaCachePautasItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>com.sandigital.sharepoint.webparts.ER_AtualizaCachePautas.ER_AtualizaCachePautas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ER_AtualizaCachePautasItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>com.sandigital.sharepoint.webparts.ER_AtualizaCachePautas.ER_AtualizaCachePautas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ER_AtualizaCachePautasItemDeleted</Name>
+        <Type>ItemDeleted</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>com.sandigital.sharepoint.webparts.ER_AtualizaCachePautas.ER_AtualizaCachePautas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ER_AtualizaCachePautasItemAttachmentAdded</Name>
+        <Type>ItemAttachmentAdded</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>com.sandigital.sharepoint.webparts.ER_AtualizaCachePautas.ER_AtualizaCachePautas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>ER_AtualizaCachePautasItemAttachmentDeleted</Name>
+        <Type>ItemAttachmentDeleted</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>com.sandigital.sharepoint.webparts.ER_AtualizaCachePautas.ER_AtualizaCachePautas</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

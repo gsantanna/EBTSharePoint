@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.sandigital.sharepoint.dal", "com.sandigital.sharepoint.dal\com.sandigital.sharepoint.dal.csproj", "{80618F89-936B-41CB-9816-38CD17F5ED6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.sandigital.sharepoint.webparts", "com.sandigital.sharepoint.webparts\com.sandigital.sharepoint.webparts.csproj", "{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.sandigital.sharepoint.reports", "com.sandigital.reports\com.sandigital.sharepoint.reports.csproj", "{FA041A65-3BD2-4815-A285-8FACEA43B35F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NLINQ", "NLINQ", "{52B1C20F-C10C-4A32-BC36-F77C9E69E023}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://rguimaraes.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = com.sandigital.sharepoint.dal\\com.sandigital.sharepoint.dal.csproj
+		SccProjectName1 = com.sandigital.sharepoint.dal
+		SccLocalPath1 = com.sandigital.sharepoint.dal
+		SccProjectUniqueName2 = com.sandigital.sharepoint.webparts\\com.sandigital.sharepoint.webparts.csproj
+		SccProjectName2 = com.sandigital.sharepoint.webparts
+		SccLocalPath2 = com.sandigital.sharepoint.webparts
+		SccProjectUniqueName3 = com.sandigital.reports\\com.sandigital.sharepoint.reports.csproj
+		SccProjectName3 = com.sandigital.reports
+		SccLocalPath3 = com.sandigital.reports
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{80618F89-936B-41CB-9816-38CD17F5ED6D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.CD_ROM|Any CPU.Deploy.0 = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.DVD-5|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{7A013386-ACFC-40F3-A1AB-BD7434C9D4AE}.SingleImage|Any CPU.Deploy.0 = Release|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{FA041A65-3BD2-4815-A285-8FACEA43B35F}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
